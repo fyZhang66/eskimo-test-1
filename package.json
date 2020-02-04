@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Eskimo6666/eskimo-test-1#readme",
   "dependencies": {
     "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
