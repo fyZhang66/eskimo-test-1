@@ -1,3 +1,3 @@
-# 车轮饼：一个Vue UI组件
+# 车轮饼��：一个Vue UI组件
 
 作者：Fangyuan Zhang
