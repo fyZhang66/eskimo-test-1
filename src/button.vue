@@ -1,9 +1,7 @@
 <template>
   <button class="f-button" :class="{[`icon-${iconPosition}`]: true}">
-   <!--  <svg v-if="icon" class="icon">
-      <use :xlink:href="`#i-${icon}`" />
-    </svg> -->
     <f-icon :name="icon" v-if="icon" class="icon"></f-icon>
+    <f-icon name="loading" class="icon loading"></f-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -12,7 +10,6 @@
 
 <script>
 export default {
-  //props: ["icon", "iconPosition"] //left right
   props: {
     icon: {},
     iconPosition: {
@@ -28,6 +25,14 @@ export default {
 
 
 <style lang="scss">
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .f-button {
   font-size: var(--font-size);
   height: var(--button-height);
@@ -64,6 +69,9 @@ export default {
     > .content {
       order: 1;
     }
+  }
+  .loading{
+      animation: spin 1s infinite linear;
   }
 }
 </style>
