@@ -3,7 +3,7 @@
    <!--  <svg v-if="icon" class="icon">
       <use :xlink:href="`#i-${icon}`" />
     </svg> -->
-    <f-icon :name="icon" v-if="icon"></f-icon>
+    <f-icon :name="icon" v-if="icon" class="icon"></f-icon>
     <div class="content">
       <slot></slot>
     </div>
