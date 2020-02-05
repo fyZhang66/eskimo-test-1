@@ -1335,6 +1335,11 @@ caseless@~0.12.0:
   resolved "https://registry.npm.taobao.org/caseless/download/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
+chai-spies@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/chai-spies/download/chai-spies-1.0.0.tgz#d16b39336fb316d03abf8c375feb23c0c8bb163d"
+  integrity sha1-0Ws5M2+zFtA6v4w3X+sjwMi7Fj0=
+
 chai@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/chai/download/chai-4.2.0.tgz#760aa72cf20e3795e84b12877ce0e83737aa29e5"
@@ -1413,6 +1418,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+cj@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.npm.taobao.org/cj/download/cj-0.0.0.tgz#cd9c3523020b7724b0309cbb35fc0d34e656439e"
+  integrity sha1-zZw1IwILdySwMJy7NfwNNOZWQ54=
 
 class-utils@^0.3.5:
   version "0.3.6"
