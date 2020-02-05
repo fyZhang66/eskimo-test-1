@@ -50,7 +50,7 @@ export default {
   align-items: center;
   vertical-align: middle;
   &:hover {
-    border-color: var(--button-color-hover);
+    border-color: var(--border-color-hover);
   }
   &:active {
     background: var(--button-active-bg);
