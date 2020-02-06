@@ -1,6 +1,5 @@
 <template>
-  <button class="f-button" :class="{[`icon-${iconPosition}`]: true}"
-  @click="$emit('click')">
+  <button class="f-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
     <f-icon :name="icon" v-if="icon && !loading" class="icon"></f-icon>
     <f-icon name="loading" v-if="loading" class="icon loading"></f-icon>
     <div class="content">
@@ -10,12 +9,18 @@
 </template>
 
 <script>
+//import Vue from 'vue'
+import Icon from "./icon";
+//Vue.component('f-icon', Icon)
 export default {
+  components: {
+    "f-icon": Icon
+  },
   props: {
     icon: {},
     loading: {
-        type: Boolean,
-        default: false
+      type: Boolean,
+      default: false
     },
     iconPosition: {
       type: String,
@@ -30,13 +35,13 @@ export default {
 
 
 <style lang="scss">
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .f-button {
   font-size: var(--font-size);
@@ -75,8 +80,8 @@ export default {
       order: 1;
     }
   }
-  .loading{
-      animation: spin 1s infinite linear;
+  .loading {
+    animation: spin 1s infinite linear;
   }
 }
 </style>
