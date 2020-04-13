@@ -1,5 +1,5 @@
 <template>
-  <button class="f-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
+  <button class="f-button kobe-gigi" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
     <f-icon :name="icon" v-if="icon && !loading" class="icon"></f-icon>
     <f-icon name="loading" v-if="loading" class="icon loading"></f-icon>
     <div class="content">
@@ -13,7 +13,7 @@
 import Icon from "./icon";
 //Vue.component('f-icon', Icon)
 export default {
-  components: {
+    components: {
     "f-icon": Icon
   },
   props: {
